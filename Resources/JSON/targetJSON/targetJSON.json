@@ -1,0 +1,47 @@
+{
+	 "payment_LEGACY_tenderType": "DOTCOM_TENDER",
+	 "address":{
+	"homeaddress":"Mumbai",
+	"homedetails":{
+			"addrLine1":"addressline1",
+			"addrLine2":"addressline2"
+		}
+	},
+	"phoneNumbers":[
+		{
+			"homePhone":"123",
+			"officePhone":"333",
+			"mobile":"9167"
+		}
+	],
+    "payment_cardNumber": "3295087475",
+    "payment_type": "DOTCOM_TENDER",
+    "payment_acctTypeCode": "1",
+    "payment_cashbackAmount": "0.0",
+    "payment_hipAcctMTDIncentiveAmt": "0",
+    "payment_hipIncentiveAmount": "0",
+    "payment_hipMthlyEligibleAmt": "0",
+    "payment_originalTenderAmount": "0",
+    "payment_tenderAmount": "878.46",
+    "payment_timeStamp": "2020-05-07T18:31:37-04:00",
+    "LEGACY_customerOrderType": "DOTCOM_CREDIT_TO_STORE",
+    "ordhdr_category": "1",
+    "ordhdr_description": "TAX 01",
+    "ordhdr_taxamount": "15.92",
+    "ordhdr_balance": "878.46",
+    "ordhdr_customerorderid": "200507183137806113207",
+    "ordhdr_numberOfLines": "35",
+    "ordhdr_orderTime": "2020-05-07T18:31:37-04:00",
+    "ordhdr_subTotal": "862.54",
+    "ordhdr_terminalTransactionID": 9999,
+    "ordhdr_total": "878.46",
+    "ordhdr_totalTax": "15.92",
+    "ordhdr_uniqueDeptCount": "7",
+    "ordhdr_upchargeNonTaxAmount": "0",
+    "ordhdr_upchargeTotal": "0",
+    "ordhdr_countryCode": "CA",
+    "ordhdr_number": "904",
+    "ordhdr_LEGACY_operatorNumber": "9998",
+    "ACCTG_DEPT_NBR": "1",
+    "orderType": "sales"
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\JSON\sourceJSON\SourceJSON.json]  and ROW size is [76] 
+]]>
+    </line>
+    <line>
+      <![CDATA[File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\JSON\targetJSON\targetJSON.json]  and ROW size is [47] 
+]]>
+    </line>
+    <line>
+      <![CDATA[File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\CSV\sourceCSV\SourceCSV.csv]  and column size is [8] 
+]]>
+    </line>
+    <line>
+      <![CDATA[File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\CSV\targetCSV\targetCSV.csv]  and column size is [7] 
+]]>
+    </line>
+    <line>
+      <![CDATA[File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\JSON\sourceJSON\SourceJSON.json]  and column size is [1] 
+]]>
+    </line>
+    <line>
+      <![CDATA[File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\JSON\targetJSON\targetJSON.json]  and column size is [1] 
+]]>
+    </line>
+    <line>
+      <![CDATA[Assertion Passed The data [DOTCOM_TENDER,DOTCOM_TENDER,0.0,1,15.92] was found in the source]]>
+    </line>
+  </reporter-output>
+  <suite name="File Validation" duration-ms="3486" started-at="2020-06-04T06:26:04Z" finished-at="2020-06-04T06:26:07Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="3486" started-at="2020-06-04T06:26:04Z" finished-at="2020-06-04T06:26:07Z">
+      <class name="dataValidation.TestClass.ValidationTest">
+        <test-method status="PASS" signature="democomparingSrcTarget(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:dataValidation.TestClass.ValidationTest@3a82f6ef]" name="democomparingSrcTarget" duration-ms="3450" started-at="2020-06-04T11:56:04Z" finished-at="2020-06-04T11:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ROW]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[JSON]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[JSON]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[,]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[,]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\JSON\sourceJSON\SourceJSON.json]  and ROW size is [76] 
+]]>
+            </line>
+            <line>
+              <![CDATA[File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\JSON\targetJSON\targetJSON.json]  and ROW size is [47] 
+]]>
+            </line>
+            <line>
+              <![CDATA[File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\CSV\sourceCSV\SourceCSV.csv]  and column size is [8] 
+]]>
+            </line>
+            <line>
+              <![CDATA[File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\CSV\targetCSV\targetCSV.csv]  and column size is [7] 
+]]>
+            </line>
+            <line>
+              <![CDATA[File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\JSON\sourceJSON\SourceJSON.json]  and column size is [1] 
+]]>
+            </line>
+            <line>
+              <![CDATA[File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\JSON\targetJSON\targetJSON.json]  and column size is [1] 
+]]>
+            </line>
+            <line>
+              <![CDATA[Assertion Passed The data [DOTCOM_TENDER,DOTCOM_TENDER,0.0,1,15.92] was found in the source]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- democomparingSrcTarget -->
+      </class> <!-- dataValidation.TestClass.ValidationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- File Validation -->
+</testng-results>

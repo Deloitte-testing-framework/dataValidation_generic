@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="File Validation">
+	<test name="Test">
+		<parameter name="separatorTarget" value=","></parameter>
+		<parameter name="separatorSource" value=","></parameter>
+		<parameter name="comparison" value="ROW"></parameter>
+		<parameter name="sourceType" value="JSON"></parameter>
+		<parameter name="targetType" value="JSON"></parameter>
+		<packages>
+			<package name="dataValidation.TestClass"></package>
+		</packages>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

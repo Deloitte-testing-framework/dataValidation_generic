@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-File_Validation">
+              <span class="suite-name border-passed">File Validation</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-File_Validation">
+                    <span>C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-File_Validation">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-File_Validation">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-File_Validation">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-File_Validation">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-File_Validation">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-File_Validation">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-File_Validation" class="hide-methods passed suite-File_Validation"> (hide)</a> <!-- hide-methods passed suite-File_Validation -->
+                      <a href="#" panel-name="suite-File_Validation" class="show-methods passed suite-File_Validation"> (show)</a> <!-- show-methods passed suite-File_Validation -->
+                    </span>
+                    <div class="method-list-content passed suite-File_Validation">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-File_Validation" title="dataValidation.TestClass.ValidationTest" hash-for-method="democomparingSrcTarget(ROW, JSON, JSON, ,, ,)">democomparingSrcTarget(ROW, JSON, JSON, ,, ,)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-File_Validation -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-File_Validation" class="panel File_Validation">
+          <div class="suite-File_Validation-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">dataValidation.TestClass.ValidationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="democomparingSrcTarget(ROW, JSON, JSON, ,, ,)">
+                  </a> <!-- democomparingSrcTarget(ROW, JSON, JSON, ,, ,) -->
+                  <span class="method-name">democomparingSrcTarget</span>
+                  <span class="parameters">(ROW, JSON, JSON, ,, ,)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-File_Validation-class-passed -->
+        </div> <!-- panel File_Validation -->
+        <div panel-name="test-xml-File_Validation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;File Validation&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;comparison&quot; value=&quot;ROW&quot;/&gt;
+    &lt;parameter name=&quot;sourceType&quot; value=&quot;JSON&quot;/&gt;
+    &lt;parameter name=&quot;targetType&quot; value=&quot;JSON&quot;/&gt;
+    &lt;parameter name=&quot;separatorTarget&quot; value=&quot;,&quot;/&gt;
+    &lt;parameter name=&quot;separatorSource&quot; value=&quot;,&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;dataValidation.TestClass&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;dataValidation.TestClass.ValidationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- File Validation --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-File_Validation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for File Validation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-File_Validation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for File Validation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-File_Validation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for File Validation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_File_Validation');
+function tableData_File_Validation() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'democomparingSrcTarget')
+data.setCell(0, 2, 'dataValidation.TestClass.ValidationTest')
+data.setCell(0, 3, 3450);
+window.suiteTableData['File_Validation']= { tableData: data, tableDiv: 'times-div-File_Validation'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <div id="times-div-File_Validation">
+              </div> <!-- times-div-File_Validation -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-File_Validation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for File Validation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">democomparingSrcTarget(ROW, JSON, JSON, ,, ,)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\JSON\sourceJSON\SourceJSON.json]  and ROW size is [76] 
+</span>
+                <span class="reporter-method-output">File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\JSON\targetJSON\targetJSON.json]  and ROW size is [47] 
+</span>
+                <span class="reporter-method-output">File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\CSV\sourceCSV\SourceCSV.csv]  and column size is [8] 
+</span>
+                <span class="reporter-method-output">File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\CSV\targetCSV\targetCSV.csv]  and column size is [7] 
+</span>
+                <span class="reporter-method-output">File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\JSON\sourceJSON\SourceJSON.json]  and column size is [1] 
+</span>
+                <span class="reporter-method-output">File name [C:\Users\sofnu\Documents\Personal\FI\Fintec\datavalidation\dataValidation.\Resources\JSON\targetJSON\targetJSON.json]  and column size is [1] 
+</span>
+                <span class="reporter-method-output">Assertion Passed The data [DOTCOM_TENDER,DOTCOM_TENDER,0.0,1,15.92] was found in the source</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-File_Validation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-File_Validation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">dataValidation.TestClass.ValidationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">democomparingSrcTarget(ROW, JSON, JSON, ,, ,)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

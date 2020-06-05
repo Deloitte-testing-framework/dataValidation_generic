@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [File Validation]">
+  <parameter name="comparison" value="ROW"/>
+  <parameter name="sourceType" value="JSON"/>
+  <parameter name="targetType" value="JSON"/>
+  <parameter name="separatorTarget" value=","/>
+  <parameter name="separatorSource" value=","/>
+  <test name="Test(failed)">
+    <parameter name="comparison" value="ROW"/>
+    <parameter name="sourceType" value="JSON"/>
+    <parameter name="targetType" value="JSON"/>
+    <parameter name="separatorTarget" value=","/>
+    <parameter name="separatorSource" value=","/>
+    <classes>
+      <class name="dataValidation.TestClass.ValidationTest">
+        <methods>
+          <include name="democomparingSrcTarget" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- dataValidation.TestClass.ValidationTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [File Validation] -->
