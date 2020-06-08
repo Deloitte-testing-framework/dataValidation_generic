@@ -10,12 +10,13 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.Reporter;
+import org.testng.annotations.Optional;
 
 import com.dataValidation.configHandler.IConstants;
 
 public class ExcelHandlerClass implements IConstants {
 
-	public static String getCellValue(String sheetName, int row, int col) {
+	public static String getCellValue(String sheetName, int row, int col,@Optional("null") String fieldName) {
 
 		Cell value = null;
 		String strValue = "";
@@ -38,7 +39,12 @@ public class ExcelHandlerClass implements IConstants {
 			return null;
 		}
 
-		return strValue.replaceAll("\\s", "").toUpperCase();
+		if(fieldName != "null") {
+			return strValue;
+		}else {
+			return strValue.replaceAll("\\s", "").toUpperCase();
+		}
+		
 
 	}
 

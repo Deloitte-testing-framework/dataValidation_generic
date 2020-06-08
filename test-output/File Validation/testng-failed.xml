@@ -2,14 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [File Validation]">
   <parameter name="comparison" value="ROW"/>
-  <parameter name="sourceType" value="JSON"/>
-  <parameter name="targetType" value="JSON"/>
+  <parameter name="sourceType" value="DB"/>
+  <parameter name="targetType" value="DB"/>
   <parameter name="separatorTarget" value=","/>
   <parameter name="separatorSource" value=","/>
   <test name="Test(failed)">
     <parameter name="comparison" value="ROW"/>
-    <parameter name="sourceType" value="JSON"/>
-    <parameter name="targetType" value="JSON"/>
+    <parameter name="sourceType" value="DB"/>
+    <parameter name="targetType" value="DB"/>
     <parameter name="separatorTarget" value=","/>
     <parameter name="separatorSource" value=","/>
     <classes>

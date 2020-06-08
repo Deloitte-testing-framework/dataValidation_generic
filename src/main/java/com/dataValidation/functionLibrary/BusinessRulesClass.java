@@ -24,7 +24,7 @@ public class BusinessRulesClass implements IConstants {
 		srcKeyList = Arrays.asList(UtilityClass.getAllKeyOfMap(srcColMaping).split(","));
 		targetKeyList = Arrays.asList(UtilityClass.getAllKeyOfMap(targetColMaping).split(","));
 		for (Entry<String, List<String>> entry : targetColMaping.entrySet()) {
-			String colMapingTransformationRuleValue = entry.getValue().get(2);
+			String colMapingTransformationRuleValue = entry.getValue().get(entry.getValue().size()-1);
 
 			if (colMapingTransformationRuleValue.equalsIgnoreCase("DirectMapping")) {
 				String colMapingKey = entry.getKey();
@@ -56,10 +56,10 @@ public class BusinessRulesClass implements IConstants {
 
 	public static Map<String, List<String>> ruleOne(Map<String, List<String>> srcData) {
 
-		String forecastedCases = ExcelHandlerClass.getCellValue(businessRulesSheetName, 1, 1);
-		String overriddenCases = ExcelHandlerClass.getCellValue(businessRulesSheetName, 1, 2);
+		String forecastedCases = ExcelHandlerClass.getCellValue(businessRulesSheetName, 1, 1,"null");
+		String overriddenCases = ExcelHandlerClass.getCellValue(businessRulesSheetName, 1, 2,"null");
 		String targetColName = ExcelHandlerClass.getCellValue(businessRulesSheetName, 1,
-				businessRuleTargetColumnNumber);
+				businessRuleTargetColumnNumber,"null");
 		List<String> modifiedCases = new ArrayList<String>();
 		Map<String, List<String>> tmpModifiedSrcData = new HashMap<String, List<String>>();
 
@@ -94,8 +94,8 @@ public class BusinessRulesClass implements IConstants {
 
 		Map<String, List<String>> tmpCases = ruleOne(srcData);
 		String targetColName = ExcelHandlerClass.getCellValue(businessRulesSheetName, 2,
-				businessRuleTargetColumnNumber);
-		String vendorPack = ExcelHandlerClass.getCellValue(businessRulesSheetName, 2, 3);
+				businessRuleTargetColumnNumber,"null");
+		String vendorPack = ExcelHandlerClass.getCellValue(businessRulesSheetName, 2, 3,"null");
 		Map<String, List<String>> tmpModifiedSrcData = new HashMap<String, List<String>>();
 		List<String> modifiedVendorPackCostAmt = new ArrayList<String>();
 

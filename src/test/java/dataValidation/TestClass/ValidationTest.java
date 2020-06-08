@@ -1,6 +1,7 @@
 package dataValidation.TestClass;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -19,6 +20,7 @@ import com.dataValidation.configHandler.IConstants;
 import com.dataValidation.functionLibrary.BusinessRulesClass;
 import com.dataValidation.functionLibrary.UtilityClass;
 import com.dataValidation.inputHanlder.CSVHandlerClass;
+import com.dataValidation.inputHanlder.DBHandlerClass;
 import com.dataValidation.inputHanlder.JSONHandlerClass;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -38,12 +40,26 @@ public class ValidationTest extends AssertationHandler implements IConstants {
 		case "CSV":
 			srcColNamesComparisionList = CSVHandlerClass.getSourceKeyComparisonListFromExcel();
 			rawSrcData = CSVHandlerClass.loadCsvData(srcColNamesComparisionList, srcCSVFolderName, separatorSource);
+			CSVHandlerClass.printCountOfColumnsinFile(srcCSVFolderName);
 			break;
 
 		case "JSON":
 			srcColNamesComparisionList = JSONHandlerClass.getSourceKeyComparisonListFromExcel();
 			rawSrcData = JSONHandlerClass.loadJsonData(srcColNamesComparisionList, srcJSONFolderName);
+			JSONHandlerClass.printCountOfColumnsinFile(srcJSONFolderName);
 			break;
+			
+		case "DB":
+			srcColNamesComparisionList = DBHandlerClass.getSourceKeyComparisonListFromExcel();
+			try {
+				rawSrcData = DBHandlerClass.loadDbData(srcColNamesComparisionList);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			DBHandlerClass.printColumnNamesandSize(rawSrcData);
+			break;
+			
 		default:
 			Reporter.log("Source type was not found", true);
 		}
@@ -52,24 +68,29 @@ public class ValidationTest extends AssertationHandler implements IConstants {
 			targetColNamesComparisionList = CSVHandlerClass.getTargetKeyComparisonListFromExcel();
 			targetData = CSVHandlerClass.loadCsvData(targetColNamesComparisionList, targetCSVFolderName,
 					separatorTarget);
+			CSVHandlerClass.printCountOfColumnsinFile(targetCSVFolderName);
 			break;
 		case "JSON":
 			targetColNamesComparisionList = JSONHandlerClass.getTargetKeyComparisonListFromExcel();
 			targetData = JSONHandlerClass.loadJsonData(targetColNamesComparisionList, targetJSONFolderName);
+			JSONHandlerClass.printCountOfColumnsinFile(targetJSONFolderName);
 			break;
-
+		case "DB":
+			targetColNamesComparisionList = DBHandlerClass.getTargetKeyComparisonListFromExcel();
+			try {
+				targetData = DBHandlerClass.loadDbData(targetColNamesComparisionList);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			DBHandlerClass.printColumnNamesandSize(targetData);
+			break;
 		default:
 			Reporter.log("Target type was not found", true);
 		}
 
 		processedSrcData = BusinessRulesClass.applyBusinessRule(rawSrcData, srcColNamesComparisionList,
 				targetColNamesComparisionList);
-
-		CSVHandlerClass.printCountOfColumnsinFile(srcCSVFolderName);
-		CSVHandlerClass.printCountOfColumnsinFile(targetCSVFolderName);
-		
-		JSONHandlerClass.printCountOfColumnsinFile(srcJSONFolderName);
-		JSONHandlerClass.printCountOfColumnsinFile(targetJSONFolderName);
 
 		List<String> srcKeyList = Arrays.asList(UtilityClass.getAllKeyOfMap(srcColNamesComparisionList).split(","));
 		List<String> targetKeyList = Arrays

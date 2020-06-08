@@ -129,9 +129,9 @@ public class CSVHandlerClass implements IConstants {
 		int rowCount = 1;
 		int colCount = 0;
 		do {
-			colNameComparison = ExcelHandlerClass.getCellValue(csvConfigSheetName, rowCount, colCount);
-			colFileNameComparison = ExcelHandlerClass.getCellValue(csvConfigSheetName, rowCount, colCount + 1);
-			colFieldLength = ExcelHandlerClass.getCellValue(csvConfigSheetName, rowCount, colCount + 2);
+			colNameComparison = ExcelHandlerClass.getCellValue(csvConfigSheetName, rowCount, colCount,"null");
+			colFileNameComparison = ExcelHandlerClass.getCellValue(csvConfigSheetName, rowCount, colCount + 1,"null");
+			colFieldLength = ExcelHandlerClass.getCellValue(csvConfigSheetName, rowCount, colCount + 2,"null");
 //			colTransformationRule = ExcelHandlerClass.getCellValue(csvConfigSheetName, rowCount, colCount + 3);
 			rowCount++;
 			if (colNameComparison == null && colFileNameComparison == null) {
@@ -158,10 +158,10 @@ public class CSVHandlerClass implements IConstants {
 		int rowCount = 1;
 		int colCount = 4;
 		do {
-			colNameComparison = ExcelHandlerClass.getCellValue(csvConfigSheetName, rowCount, colCount);
-			colFileNameComparison = ExcelHandlerClass.getCellValue(csvConfigSheetName, rowCount, colCount + 1);
-			colFieldLength = ExcelHandlerClass.getCellValue(csvConfigSheetName, rowCount, colCount + 2);
-			colTransformationRule = ExcelHandlerClass.getCellValue(csvConfigSheetName, rowCount, colCount -1);
+			colNameComparison = ExcelHandlerClass.getCellValue(csvConfigSheetName, rowCount, colCount,"null");
+			colFileNameComparison = ExcelHandlerClass.getCellValue(csvConfigSheetName, rowCount, colCount + 1,"null");
+			colFieldLength = ExcelHandlerClass.getCellValue(csvConfigSheetName, rowCount, colCount + 2,"null");
+			colTransformationRule = ExcelHandlerClass.getCellValue(csvConfigSheetName, rowCount, colCount -1,"null");
 			rowCount++;
 			if (colNameComparison == null && colFileNameComparison == null) {
 				break;

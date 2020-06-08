@@ -11,5 +11,6 @@ public interface IConstants {
 	public static final String srcJSONFolderName = "./Resources/JSON/sourceJSON/";
 	public static final String targetJSONFolderName = "./Resources/JSON/targetJSON/";
 	public static final String jsonConfigSheetName = "JSON_ConfigSheet";
+	public static final String dbConfigSheetName = "DB_ConfigSheet";
 
 }

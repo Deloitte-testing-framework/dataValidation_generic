@@ -108,9 +108,9 @@ public class JSONHandlerClass implements IConstants {
 		int rowCount = 1;
 		int colCount = 0;
 		do {
-			colNameComparison = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount);
-			colFileNameComparison = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount + 1);
-			colFieldLength = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount + 2);
+			colNameComparison = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount,"null");
+			colFileNameComparison = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount + 1,"null");
+			colFieldLength = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount + 2,"null");
 			// colTransformationRule = ExcelHandlerClass.getCellValue(csvConfigSheetName,
 			// rowCount, colCount + 3);
 			rowCount++;
@@ -138,10 +138,10 @@ public class JSONHandlerClass implements IConstants {
 		int rowCount = 1;
 		int colCount = 4;
 		do {
-			colNameComparison = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount);
-			colFileNameComparison = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount + 1);
-			colFieldLength = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount + 2);
-			colTransformationRule = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount - 1);
+			colNameComparison = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount,"null");
+			colFileNameComparison = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount + 1,"null");
+			colFieldLength = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount + 2,"null");
+			colTransformationRule = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount - 1,"null");
 			rowCount++;
 			if (colNameComparison == null && colFileNameComparison == null) {
 				break;
