@@ -101,7 +101,7 @@
                     <div class="method-list-content passed suite-File_Validation">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-File_Validation" title="dataValidation.TestClass.ValidationTest" hash-for-method="democomparingSrcTarget(ROW, JSON, JSON, ,, ,)">democomparingSrcTarget(ROW, JSON, JSON, ,, ,)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-File_Validation" title="dataValidation.TestClass.ValidationTest" hash-for-method="democomparingSrcTarget(ROW, DB, DB, ,, ,)">democomparingSrcTarget(ROW, DB, DB, ,, ,)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-File_Validation -->
@@ -124,10 +124,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="democomparingSrcTarget(ROW, JSON, JSON, ,, ,)">
-                  </a> <!-- democomparingSrcTarget(ROW, JSON, JSON, ,, ,) -->
+                  <a name="democomparingSrcTarget(ROW, DB, DB, ,, ,)">
+                  </a> <!-- democomparingSrcTarget(ROW, DB, DB, ,, ,) -->
                   <span class="method-name">democomparingSrcTarget</span>
-                  <span class="parameters">(ROW, JSON, JSON, ,, ,)</span>
+                  <span class="parameters">(ROW, DB, DB, ,, ,)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -144,8 +144,8 @@
 &lt;suite name=&quot;File Validation&quot;&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;comparison&quot; value=&quot;ROW&quot;/&gt;
-    &lt;parameter name=&quot;sourceType&quot; value=&quot;JSON&quot;/&gt;
-    &lt;parameter name=&quot;targetType&quot; value=&quot;JSON&quot;/&gt;
+    &lt;parameter name=&quot;sourceType&quot; value=&quot;DB&quot;/&gt;
+    &lt;parameter name=&quot;targetType&quot; value=&quot;DB&quot;/&gt;
     &lt;parameter name=&quot;separatorTarget&quot; value=&quot;,&quot;/&gt;
     &lt;parameter name=&quot;separatorSource&quot; value=&quot;,&quot;/&gt;
     &lt;packages&gt;
@@ -196,12 +196,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'democomparingSrcTarget')
 data.setCell(0, 2, 'dataValidation.TestClass.ValidationTest')
-data.setCell(0, 3, 1989);
+data.setCell(0, 3, 6571);
 window.suiteTableData['File_Validation']= { tableData: data, tableDiv: 'times-div-File_Validation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-File_Validation">
               </div> <!-- times-div-File_Validation -->
             </div> <!-- times-div -->
@@ -213,17 +213,70 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">democomparingSrcTarget(ROW, JSON, JSON, ,, ,)</span>
+              <span class="reporter-method-name">democomparingSrcTarget(ROW, DB, DB, ,, ,)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\sourceJSON\SourceJSON.json]  and ROW size is [76] 
+                <span class="reporter-method-output">Connection Successful!</span>
+                <span class="reporter-method-output">SELECT ORDERID FROM ORDERS </span>
+                <span class="reporter-method-output">Connection Successful!</span>
+                <span class="reporter-method-output">SELECT CATEGORY FROM ORDERS </span>
+                <span class="reporter-method-output">Connection Successful!</span>
+                <span class="reporter-method-output">SELECT TEMPSTORENBR FROM ORDERS </span>
+                <span class="reporter-method-output">Connection Successful!</span>
+                <span class="reporter-method-output">SELECT ITEMNUMBER FROM ORDERS</span>
+                <span class="reporter-method-output">Connection Successful!</span>
+                <span class="reporter-method-output">SELECT TOTALTAX FROM ORDERS</span>
+                <span class="reporter-method-output">Connection Successful!</span>
+                <span class="reporter-method-output">SELECT FORECASTEDCASES FROM ORDERS</span>
+                <span class="reporter-method-output">Connection Successful!</span>
+                <span class="reporter-method-output">SELECT OVERRIDDENCASES FROM ORDERS</span>
+                <span class="reporter-method-output">Connection Successful!</span>
+                <span class="reporter-method-output">SELECT VENDORPACK FROM ORDERS</span>
+                <span class="reporter-method-output">Column name [ORDERID]  and column size is [2] 
 </span>
-                <span class="reporter-method-output">File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\sourceJSON\SourceJSON.json]  and column size is [1] 
+                <span class="reporter-method-output">Column name [CATEGORY]  and column size is [2] 
 </span>
-                <span class="reporter-method-output">File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\targetJSON\targetJSON.json]  and ROW size is [47] 
+                <span class="reporter-method-output">Column name [VENDORPACK]  and column size is [2] 
 </span>
-                <span class="reporter-method-output">File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\targetJSON\targetJSON.json]  and column size is [1] 
+                <span class="reporter-method-output">Column name [TEMPSTORENBR]  and column size is [2] 
 </span>
-                <span class="reporter-method-output">Assertion Passed The data [DOTCOM_TENDER,DOTCOM_TENDER,0.0,1,15.92] was found in the source</span>
+                <span class="reporter-method-output">Column name [OVERRIDDENCASES]  and column size is [2] 
+</span>
+                <span class="reporter-method-output">Column name [TOTALTAX]  and column size is [2] 
+</span>
+                <span class="reporter-method-output">Column name [FORECASTEDCASES]  and column size is [2] 
+</span>
+                <span class="reporter-method-output">Column name [ITEMNUMBER]  and column size is [2] 
+</span>
+                <span class="reporter-method-output">Connection Successful!</span>
+                <span class="reporter-method-output">SELECT CUSTOMERORDERID FROM STOREORDERS </span>
+                <span class="reporter-method-output">Connection Successful!</span>
+                <span class="reporter-method-output">SELECT CATEGORY FROM STOREORDERS </span>
+                <span class="reporter-method-output">Connection Successful!</span>
+                <span class="reporter-method-output">SELECT STORENUMBER FROM STOREORDERS </span>
+                <span class="reporter-method-output">Connection Successful!</span>
+                <span class="reporter-method-output">SELECT ITEMNUMBER FROM STOREORDERS</span>
+                <span class="reporter-method-output">Connection Successful!</span>
+                <span class="reporter-method-output">SELECT TOTALTAX FROM STOREORDERS</span>
+                <span class="reporter-method-output">Connection Successful!</span>
+                <span class="reporter-method-output">SELECT CASES FROM STOREORDERS</span>
+                <span class="reporter-method-output">Connection Successful!</span>
+                <span class="reporter-method-output">SELECT VENDORPACKCOSTAMT FROM STOREORDERS</span>
+                <span class="reporter-method-output">Column name [CUSTOMERORDERID]  and column size is [2] 
+</span>
+                <span class="reporter-method-output">Column name [CATEGORY]  and column size is [2] 
+</span>
+                <span class="reporter-method-output">Column name [VENDORPACKCOSTAMT]  and column size is [2] 
+</span>
+                <span class="reporter-method-output">Column name [TOTALTAX]  and column size is [2] 
+</span>
+                <span class="reporter-method-output">Column name [STORENUMBER]  and column size is [2] 
+</span>
+                <span class="reporter-method-output">Column name [CASES]  and column size is [2] 
+</span>
+                <span class="reporter-method-output">Column name [ITEMNUMBER]  and column size is [2] 
+</span>
+                <span class="reporter-method-output">Assertion Passed The data [766982166,PRODUCE,6042,80237974,13,2,4] was found in the source</span>
+                <span class="reporter-method-output">Assertion Passed The data [768262143,GROCERYDRYGOODS,6042,58476407,12,4,8] was found in the source</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -243,7 +296,7 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">dataValidation.TestClass.ValidationTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">democomparingSrcTarget(ROW, JSON, JSON, ,, ,)</span>
+                <span class="method-name">democomparingSrcTarget(ROW, DB, DB, ,, ,)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

@@ -2,31 +2,168 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\sourceJSON\SourceJSON.json]  and ROW size is [76] 
+      <![CDATA[Connection Successful!]]>
+    </line>
+    <line>
+      <![CDATA[SELECT ORDERID FROM ORDERS ]]>
+    </line>
+    <line>
+      <![CDATA[Connection Successful!]]>
+    </line>
+    <line>
+      <![CDATA[SELECT CATEGORY FROM ORDERS ]]>
+    </line>
+    <line>
+      <![CDATA[Connection Successful!]]>
+    </line>
+    <line>
+      <![CDATA[SELECT TEMPSTORENBR FROM ORDERS ]]>
+    </line>
+    <line>
+      <![CDATA[Connection Successful!]]>
+    </line>
+    <line>
+      <![CDATA[SELECT ITEMNUMBER FROM ORDERS]]>
+    </line>
+    <line>
+      <![CDATA[Connection Successful!]]>
+    </line>
+    <line>
+      <![CDATA[SELECT TOTALTAX FROM ORDERS]]>
+    </line>
+    <line>
+      <![CDATA[Connection Successful!]]>
+    </line>
+    <line>
+      <![CDATA[SELECT FORECASTEDCASES FROM ORDERS]]>
+    </line>
+    <line>
+      <![CDATA[Connection Successful!]]>
+    </line>
+    <line>
+      <![CDATA[SELECT OVERRIDDENCASES FROM ORDERS]]>
+    </line>
+    <line>
+      <![CDATA[Connection Successful!]]>
+    </line>
+    <line>
+      <![CDATA[SELECT VENDORPACK FROM ORDERS]]>
+    </line>
+    <line>
+      <![CDATA[Column name [ORDERID]  and column size is [2] 
 ]]>
     </line>
     <line>
-      <![CDATA[File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\sourceJSON\SourceJSON.json]  and column size is [1] 
+      <![CDATA[Column name [CATEGORY]  and column size is [2] 
 ]]>
     </line>
     <line>
-      <![CDATA[File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\targetJSON\targetJSON.json]  and ROW size is [47] 
+      <![CDATA[Column name [VENDORPACK]  and column size is [2] 
 ]]>
     </line>
     <line>
-      <![CDATA[File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\targetJSON\targetJSON.json]  and column size is [1] 
+      <![CDATA[Column name [TEMPSTORENBR]  and column size is [2] 
 ]]>
     </line>
     <line>
-      <![CDATA[Assertion Passed The data [DOTCOM_TENDER,DOTCOM_TENDER,0.0,1,15.92] was found in the source]]>
+      <![CDATA[Column name [OVERRIDDENCASES]  and column size is [2] 
+]]>
+    </line>
+    <line>
+      <![CDATA[Column name [TOTALTAX]  and column size is [2] 
+]]>
+    </line>
+    <line>
+      <![CDATA[Column name [FORECASTEDCASES]  and column size is [2] 
+]]>
+    </line>
+    <line>
+      <![CDATA[Column name [ITEMNUMBER]  and column size is [2] 
+]]>
+    </line>
+    <line>
+      <![CDATA[Connection Successful!]]>
+    </line>
+    <line>
+      <![CDATA[SELECT CUSTOMERORDERID FROM STOREORDERS ]]>
+    </line>
+    <line>
+      <![CDATA[Connection Successful!]]>
+    </line>
+    <line>
+      <![CDATA[SELECT CATEGORY FROM STOREORDERS ]]>
+    </line>
+    <line>
+      <![CDATA[Connection Successful!]]>
+    </line>
+    <line>
+      <![CDATA[SELECT STORENUMBER FROM STOREORDERS ]]>
+    </line>
+    <line>
+      <![CDATA[Connection Successful!]]>
+    </line>
+    <line>
+      <![CDATA[SELECT ITEMNUMBER FROM STOREORDERS]]>
+    </line>
+    <line>
+      <![CDATA[Connection Successful!]]>
+    </line>
+    <line>
+      <![CDATA[SELECT TOTALTAX FROM STOREORDERS]]>
+    </line>
+    <line>
+      <![CDATA[Connection Successful!]]>
+    </line>
+    <line>
+      <![CDATA[SELECT CASES FROM STOREORDERS]]>
+    </line>
+    <line>
+      <![CDATA[Connection Successful!]]>
+    </line>
+    <line>
+      <![CDATA[SELECT VENDORPACKCOSTAMT FROM STOREORDERS]]>
+    </line>
+    <line>
+      <![CDATA[Column name [CUSTOMERORDERID]  and column size is [2] 
+]]>
+    </line>
+    <line>
+      <![CDATA[Column name [CATEGORY]  and column size is [2] 
+]]>
+    </line>
+    <line>
+      <![CDATA[Column name [VENDORPACKCOSTAMT]  and column size is [2] 
+]]>
+    </line>
+    <line>
+      <![CDATA[Column name [TOTALTAX]  and column size is [2] 
+]]>
+    </line>
+    <line>
+      <![CDATA[Column name [STORENUMBER]  and column size is [2] 
+]]>
+    </line>
+    <line>
+      <![CDATA[Column name [CASES]  and column size is [2] 
+]]>
+    </line>
+    <line>
+      <![CDATA[Column name [ITEMNUMBER]  and column size is [2] 
+]]>
+    </line>
+    <line>
+      <![CDATA[Assertion Passed The data [766982166,PRODUCE,6042,80237974,13,2,4] was found in the source]]>
+    </line>
+    <line>
+      <![CDATA[Assertion Passed The data [768262143,GROCERYDRYGOODS,6042,58476407,12,4,8] was found in the source]]>
     </line>
   </reporter-output>
-  <suite name="File Validation" duration-ms="2013" started-at="2020-06-09T10:02:05Z" finished-at="2020-06-09T10:02:07Z">
+  <suite name="File Validation" duration-ms="6602" started-at="2020-06-09T12:34:50Z" finished-at="2020-06-09T12:34:57Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="2013" started-at="2020-06-09T10:02:05Z" finished-at="2020-06-09T10:02:07Z">
+    <test name="Test" duration-ms="6602" started-at="2020-06-09T12:34:50Z" finished-at="2020-06-09T12:34:57Z">
       <class name="dataValidation.TestClass.ValidationTest">
-        <test-method status="PASS" signature="democomparingSrcTarget(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:dataValidation.TestClass.ValidationTest@a9e816]" name="democomparingSrcTarget" duration-ms="1989" started-at="2020-06-09T15:32:05Z" finished-at="2020-06-09T15:32:07Z">
+        <test-method status="PASS" signature="democomparingSrcTarget(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:dataValidation.TestClass.ValidationTest@a9e816]" name="democomparingSrcTarget" duration-ms="6571" started-at="2020-06-09T18:04:50Z" finished-at="2020-06-09T18:04:57Z">
           <params>
             <param index="0">
               <value>
@@ -35,12 +172,12 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[JSON]]>
+                <![CDATA[DB]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[JSON]]>
+                <![CDATA[DB]]>
               </value>
             </param>
             <param index="3">
@@ -56,23 +193,160 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\sourceJSON\SourceJSON.json]  and ROW size is [76] 
+              <![CDATA[Connection Successful!]]>
+            </line>
+            <line>
+              <![CDATA[SELECT ORDERID FROM ORDERS ]]>
+            </line>
+            <line>
+              <![CDATA[Connection Successful!]]>
+            </line>
+            <line>
+              <![CDATA[SELECT CATEGORY FROM ORDERS ]]>
+            </line>
+            <line>
+              <![CDATA[Connection Successful!]]>
+            </line>
+            <line>
+              <![CDATA[SELECT TEMPSTORENBR FROM ORDERS ]]>
+            </line>
+            <line>
+              <![CDATA[Connection Successful!]]>
+            </line>
+            <line>
+              <![CDATA[SELECT ITEMNUMBER FROM ORDERS]]>
+            </line>
+            <line>
+              <![CDATA[Connection Successful!]]>
+            </line>
+            <line>
+              <![CDATA[SELECT TOTALTAX FROM ORDERS]]>
+            </line>
+            <line>
+              <![CDATA[Connection Successful!]]>
+            </line>
+            <line>
+              <![CDATA[SELECT FORECASTEDCASES FROM ORDERS]]>
+            </line>
+            <line>
+              <![CDATA[Connection Successful!]]>
+            </line>
+            <line>
+              <![CDATA[SELECT OVERRIDDENCASES FROM ORDERS]]>
+            </line>
+            <line>
+              <![CDATA[Connection Successful!]]>
+            </line>
+            <line>
+              <![CDATA[SELECT VENDORPACK FROM ORDERS]]>
+            </line>
+            <line>
+              <![CDATA[Column name [ORDERID]  and column size is [2] 
 ]]>
             </line>
             <line>
-              <![CDATA[File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\sourceJSON\SourceJSON.json]  and column size is [1] 
+              <![CDATA[Column name [CATEGORY]  and column size is [2] 
 ]]>
             </line>
             <line>
-              <![CDATA[File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\targetJSON\targetJSON.json]  and ROW size is [47] 
+              <![CDATA[Column name [VENDORPACK]  and column size is [2] 
 ]]>
             </line>
             <line>
-              <![CDATA[File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\targetJSON\targetJSON.json]  and column size is [1] 
+              <![CDATA[Column name [TEMPSTORENBR]  and column size is [2] 
 ]]>
             </line>
             <line>
-              <![CDATA[Assertion Passed The data [DOTCOM_TENDER,DOTCOM_TENDER,0.0,1,15.92] was found in the source]]>
+              <![CDATA[Column name [OVERRIDDENCASES]  and column size is [2] 
+]]>
+            </line>
+            <line>
+              <![CDATA[Column name [TOTALTAX]  and column size is [2] 
+]]>
+            </line>
+            <line>
+              <![CDATA[Column name [FORECASTEDCASES]  and column size is [2] 
+]]>
+            </line>
+            <line>
+              <![CDATA[Column name [ITEMNUMBER]  and column size is [2] 
+]]>
+            </line>
+            <line>
+              <![CDATA[Connection Successful!]]>
+            </line>
+            <line>
+              <![CDATA[SELECT CUSTOMERORDERID FROM STOREORDERS ]]>
+            </line>
+            <line>
+              <![CDATA[Connection Successful!]]>
+            </line>
+            <line>
+              <![CDATA[SELECT CATEGORY FROM STOREORDERS ]]>
+            </line>
+            <line>
+              <![CDATA[Connection Successful!]]>
+            </line>
+            <line>
+              <![CDATA[SELECT STORENUMBER FROM STOREORDERS ]]>
+            </line>
+            <line>
+              <![CDATA[Connection Successful!]]>
+            </line>
+            <line>
+              <![CDATA[SELECT ITEMNUMBER FROM STOREORDERS]]>
+            </line>
+            <line>
+              <![CDATA[Connection Successful!]]>
+            </line>
+            <line>
+              <![CDATA[SELECT TOTALTAX FROM STOREORDERS]]>
+            </line>
+            <line>
+              <![CDATA[Connection Successful!]]>
+            </line>
+            <line>
+              <![CDATA[SELECT CASES FROM STOREORDERS]]>
+            </line>
+            <line>
+              <![CDATA[Connection Successful!]]>
+            </line>
+            <line>
+              <![CDATA[SELECT VENDORPACKCOSTAMT FROM STOREORDERS]]>
+            </line>
+            <line>
+              <![CDATA[Column name [CUSTOMERORDERID]  and column size is [2] 
+]]>
+            </line>
+            <line>
+              <![CDATA[Column name [CATEGORY]  and column size is [2] 
+]]>
+            </line>
+            <line>
+              <![CDATA[Column name [VENDORPACKCOSTAMT]  and column size is [2] 
+]]>
+            </line>
+            <line>
+              <![CDATA[Column name [TOTALTAX]  and column size is [2] 
+]]>
+            </line>
+            <line>
+              <![CDATA[Column name [STORENUMBER]  and column size is [2] 
+]]>
+            </line>
+            <line>
+              <![CDATA[Column name [CASES]  and column size is [2] 
+]]>
+            </line>
+            <line>
+              <![CDATA[Column name [ITEMNUMBER]  and column size is [2] 
+]]>
+            </line>
+            <line>
+              <![CDATA[Assertion Passed The data [766982166,PRODUCE,6042,80237974,13,2,4] was found in the source]]>
+            </line>
+            <line>
+              <![CDATA[Assertion Passed The data [768262143,GROCERYDRYGOODS,6042,58476407,12,4,8] was found in the source]]>
             </line>
           </reporter-output>
         </test-method> <!-- democomparingSrcTarget -->

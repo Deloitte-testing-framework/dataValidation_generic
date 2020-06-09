@@ -109,7 +109,7 @@ public class BusinessRulesClass implements IConstants {
 						String cases = entry.getValue().get(i);
 						String singleVendorPack = vendorPackList.get(i);
 						modifiedVendorPackCostAmt
-								.add(Double.toString(Double.parseDouble(cases) * Double.parseDouble(singleVendorPack)));
+								.add(Integer.toString(Integer.parseInt(cases) * Integer.parseInt(singleVendorPack)));
 					}
 
 				}

@@ -5,8 +5,8 @@
 		<parameter name="separatorTarget" value=","></parameter>
 		<parameter name="separatorSource" value=","></parameter>
 		<parameter name="comparison" value="ROW"></parameter>
-		<parameter name="sourceType" value="JSON"></parameter>
-		<parameter name="targetType" value="JSON"></parameter>
+		<parameter name="sourceType" value="DB"></parameter>
+		<parameter name="targetType" value="DB"></parameter>
 		<packages>
 			<package name="dataValidation.TestClass"></package>
 		</packages>

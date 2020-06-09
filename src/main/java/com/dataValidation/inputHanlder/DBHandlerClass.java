@@ -110,9 +110,7 @@ public class DBHandlerClass implements IConstants {
 			// colTransformationRule = ExcelHandlerClass.getCellValue(csvConfigSheetName,
 			// rowCount, colCount + 3);
 			rowCount++;
-			if (colColumnName == null && colTableName == null) {
-				break;
-			} else {
+			if (colConnectionString!=null) {
 				List<String> tempArryList = new ArrayList<String>();
 				tempArryList.add(colConnectionString);
 				tempArryList.add(colUserName);
@@ -124,8 +122,11 @@ public class DBHandlerClass implements IConstants {
 				tempArryList.add(colFieldLength);
 				// tempArryList.add(colTransformationRule);
 				sourceKeyComparisonList.put(colColumnName, tempArryList);
+				
+			} else {
+				break;
 			}
-		} while (colColumnName != null && colTableName != null);
+		} while (colConnectionString!=null);
 
 		return sourceKeyComparisonList;
 
@@ -156,9 +157,7 @@ public class DBHandlerClass implements IConstants {
 			colFieldLength = ExcelHandlerClass.getCellValue(dbConfigSheetName, rowCount, colCount + 7, "null");
 			colTransformationRule = ExcelHandlerClass.getCellValue(dbConfigSheetName, rowCount, colCount - 1, "null");
 			rowCount++;
-			if (colColumnName == null && colTableName == null) {
-				break;
-			} else {
+			if (colConnectionString!=null) {
 				List<String> tempArryList = new ArrayList<String>();
 				tempArryList.add(colConnectionString);
 				tempArryList.add(colUserName);
@@ -170,8 +169,11 @@ public class DBHandlerClass implements IConstants {
 				tempArryList.add(colFieldLength);
 				tempArryList.add(colTransformationRule);
 				targetKeyComparisonList.put(colColumnName, tempArryList);
+				
+			} else {
+				break;
 			}
-		} while (colColumnName != null && colTableName != null);
+		} while (colConnectionString!=null);
 
 		return targetKeyComparisonList;
 
