@@ -1,61 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[Connection Successful!]]>
-    </line>
-    <line>
-      <![CDATA[Connection Successful!]]>
-    </line>
-    <line>
-      <![CDATA[Connection Successful!]]>
-    </line>
-    <line>
-      <![CDATA[Column name [ROLLNO]  and column size is [2] 
+      <![CDATA[File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\sourceJSON\SourceJSON.json]  and ROW size is [76] 
 ]]>
     </line>
     <line>
-      <![CDATA[Column name [RESULT]  and column size is [2] 
+      <![CDATA[File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\sourceJSON\SourceJSON.json]  and column size is [1] 
 ]]>
     </line>
     <line>
-      <![CDATA[Column name [NAME]  and column size is [1] 
+      <![CDATA[File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\targetJSON\targetJSON.json]  and ROW size is [47] 
 ]]>
     </line>
     <line>
-      <![CDATA[Connection Successful!]]>
-    </line>
-    <line>
-      <![CDATA[Connection Successful!]]>
-    </line>
-    <line>
-      <![CDATA[Connection Successful!]]>
-    </line>
-    <line>
-      <![CDATA[Column name [ROLLNO]  and column size is [2] 
+      <![CDATA[File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\targetJSON\targetJSON.json]  and column size is [1] 
 ]]>
     </line>
     <line>
-      <![CDATA[Column name [RESULT]  and column size is [2] 
-]]>
-    </line>
-    <line>
-      <![CDATA[Column name [NAME]  and column size is [2] 
-]]>
-    </line>
-    <line>
-      <![CDATA[Assertion Failed The data [ANAND,902,FAIL] was not found in the source]]>
-    </line>
-    <line>
-      <![CDATA[Assertion Passed The data [HARINI,13,PASS] was found in the source]]>
+      <![CDATA[Assertion Passed The data [DOTCOM_TENDER,DOTCOM_TENDER,0.0,1,15.92] was found in the source]]>
     </line>
   </reporter-output>
-  <suite name="File Validation" duration-ms="2798" started-at="2020-06-08T11:39:06Z" finished-at="2020-06-08T11:39:09Z">
+  <suite name="File Validation" duration-ms="2013" started-at="2020-06-09T10:02:05Z" finished-at="2020-06-09T10:02:07Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="2798" started-at="2020-06-08T11:39:06Z" finished-at="2020-06-08T11:39:09Z">
+    <test name="Test" duration-ms="2013" started-at="2020-06-09T10:02:05Z" finished-at="2020-06-09T10:02:07Z">
       <class name="dataValidation.TestClass.ValidationTest">
-        <test-method status="FAIL" signature="democomparingSrcTarget(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:dataValidation.TestClass.ValidationTest@a9e816]" name="democomparingSrcTarget" duration-ms="2777" started-at="2020-06-08T17:09:06Z" finished-at="2020-06-08T17:09:09Z">
+        <test-method status="PASS" signature="democomparingSrcTarget(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:dataValidation.TestClass.ValidationTest@a9e816]" name="democomparingSrcTarget" duration-ms="1989" started-at="2020-06-09T15:32:05Z" finished-at="2020-06-09T15:32:07Z">
           <params>
             <param index="0">
               <value>
@@ -64,12 +35,12 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[DB]]>
+                <![CDATA[JSON]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[DB]]>
+                <![CDATA[JSON]]>
               </value>
             </param>
             <param index="3">
@@ -83,92 +54,25 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:37)
-	at com.dataValidation.asserationHandler.AssertationHandler.assertAll(AssertationHandler.java:15)
-	at dataValidation.TestClass.ValidationTest.democomparingSrcTarget(ValidationTest.java:145)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Connection Successful!]]>
-            </line>
-            <line>
-              <![CDATA[Connection Successful!]]>
-            </line>
-            <line>
-              <![CDATA[Connection Successful!]]>
-            </line>
-            <line>
-              <![CDATA[Column name [ROLLNO]  and column size is [2] 
+              <![CDATA[File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\sourceJSON\SourceJSON.json]  and ROW size is [76] 
 ]]>
             </line>
             <line>
-              <![CDATA[Column name [RESULT]  and column size is [2] 
+              <![CDATA[File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\sourceJSON\SourceJSON.json]  and column size is [1] 
 ]]>
             </line>
             <line>
-              <![CDATA[Column name [NAME]  and column size is [1] 
+              <![CDATA[File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\targetJSON\targetJSON.json]  and ROW size is [47] 
 ]]>
             </line>
             <line>
-              <![CDATA[Connection Successful!]]>
-            </line>
-            <line>
-              <![CDATA[Connection Successful!]]>
-            </line>
-            <line>
-              <![CDATA[Connection Successful!]]>
-            </line>
-            <line>
-              <![CDATA[Column name [ROLLNO]  and column size is [2] 
+              <![CDATA[File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\targetJSON\targetJSON.json]  and column size is [1] 
 ]]>
             </line>
             <line>
-              <![CDATA[Column name [RESULT]  and column size is [2] 
-]]>
-            </line>
-            <line>
-              <![CDATA[Column name [NAME]  and column size is [2] 
-]]>
-            </line>
-            <line>
-              <![CDATA[Assertion Failed The data [ANAND,902,FAIL] was not found in the source]]>
-            </line>
-            <line>
-              <![CDATA[Assertion Passed The data [HARINI,13,PASS] was found in the source]]>
+              <![CDATA[Assertion Passed The data [DOTCOM_TENDER,DOTCOM_TENDER,0.0,1,15.92] was found in the source]]>
             </line>
           </reporter-output>
         </test-method> <!-- democomparingSrcTarget -->

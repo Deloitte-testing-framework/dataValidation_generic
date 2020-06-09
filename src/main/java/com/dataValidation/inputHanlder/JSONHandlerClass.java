@@ -38,6 +38,7 @@ public class JSONHandlerClass implements IConstants {
 
 		boolean sizeResult = false;
 		ObjectMapper mapper = new ObjectMapper();
+		File file = new File("");
 		mapper.enable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY);
 
 		if (folderName.equalsIgnoreCase(srcJSONFolderName)) {
@@ -48,8 +49,20 @@ public class JSONHandlerClass implements IConstants {
 
 		ArrayList<String> filePaths = UtilityClass.getListOfFilePath(folderName);
 
-		File file = new File(filePaths.get(0));
+		for (Entry<String, List<String>> entrySingleColNames : colNames.entrySet()) {
+			String colNameValue = entrySingleColNames.getValue().get(0);
+			String colNameKey = entrySingleColNames.getKey();
+			Integer indexValueSingleFilePath = null;
 
+			for (String singleFilePath : filePaths) {
+				if (singleFilePath.contains(colNameValue)) {
+					indexValueSingleFilePath = filePaths.indexOf(singleFilePath);
+					file = new File(singleFilePath);
+					break;
+				}
+			}
+
+		}
 		dataInFile = new HashMap<String, List<String>>();
 
 		final JsonNode rootNode = mapper.readTree(file);
@@ -108,9 +121,9 @@ public class JSONHandlerClass implements IConstants {
 		int rowCount = 1;
 		int colCount = 0;
 		do {
-			colNameComparison = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount,"null");
-			colFileNameComparison = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount + 1,"null");
-			colFieldLength = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount + 2,"null");
+			colNameComparison = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount);
+			colFileNameComparison = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount + 1);
+			colFieldLength = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount + 2);
 			// colTransformationRule = ExcelHandlerClass.getCellValue(csvConfigSheetName,
 			// rowCount, colCount + 3);
 			rowCount++;
@@ -138,10 +151,10 @@ public class JSONHandlerClass implements IConstants {
 		int rowCount = 1;
 		int colCount = 4;
 		do {
-			colNameComparison = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount,"null");
-			colFileNameComparison = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount + 1,"null");
-			colFieldLength = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount + 2,"null");
-			colTransformationRule = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount - 1,"null");
+			colNameComparison = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount);
+			colFileNameComparison = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount + 1);
+			colFieldLength = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount + 2);
+			colTransformationRule = ExcelHandlerClass.getCellValue(jsonConfigSheetName, rowCount, colCount - 1);
 			rowCount++;
 			if (colNameComparison == null && colFileNameComparison == null) {
 				break;

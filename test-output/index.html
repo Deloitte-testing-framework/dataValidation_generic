@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-File_Validation">
-              <span class="suite-name border-failed">File Validation</span>
+              <span class="suite-name border-passed">File Validation</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-File_Validation" class="hide-methods failed suite-File_Validation"> (hide)</a> <!-- hide-methods failed suite-File_Validation -->
-                      <a href="#" panel-name="suite-File_Validation" class="show-methods failed suite-File_Validation"> (show)</a> <!-- show-methods failed suite-File_Validation -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-File_Validation" class="hide-methods passed suite-File_Validation"> (hide)</a> <!-- hide-methods passed suite-File_Validation -->
+                      <a href="#" panel-name="suite-File_Validation" class="show-methods passed suite-File_Validation"> (show)</a> <!-- show-methods passed suite-File_Validation -->
                     </span>
-                    <div class="method-list-content failed suite-File_Validation">
+                    <div class="method-list-content passed suite-File_Validation">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-File_Validation" title="dataValidation.TestClass.ValidationTest" hash-for-method="democomparingSrcTarget(ROW, DB, DB, ,, ,)">democomparingSrcTarget(ROW, DB, DB, ,, ,)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-File_Validation" title="dataValidation.TestClass.ValidationTest" hash-for-method="democomparingSrcTarget(ROW, JSON, JSON, ,, ,)">democomparingSrcTarget(ROW, JSON, JSON, ,, ,)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-File_Validation -->
+                    </div> <!-- method-list-content passed suite-File_Validation -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,57 +116,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-File_Validation" class="panel File_Validation">
-          <div class="suite-File_Validation-class-failed">
+          <div class="suite-File_Validation-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">dataValidation.TestClass.ValidationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="democomparingSrcTarget(ROW, DB, DB, ,, ,)">
-                  </a> <!-- democomparingSrcTarget(ROW, DB, DB, ,, ,) -->
+                  <a name="democomparingSrcTarget(ROW, JSON, JSON, ,, ,)">
+                  </a> <!-- democomparingSrcTarget(ROW, JSON, JSON, ,, ,) -->
                   <span class="method-name">democomparingSrcTarget</span>
-                  <span class="parameters">(ROW, DB, DB, ,, ,)</span>
-                  <div class="stack-trace"><b>"java.lang.AssertionError: The following asserts failed:
-
-	at com.dataValidation.asserationHandler.AssertationHandler.assertAll(AssertationHandler.java:15)
-	at dataValidation.TestClass.ValidationTest.democomparingSrcTarget(ValidationTest.java:145)
-... Removed 25 stack frames<br/> java.lang.AssertionError: The following asserts failed:
-
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:37)
-	at com.dataValidation.asserationHandler.AssertationHandler.assertAll(AssertationHandler.java:15)
-	at dataValidation.TestClass.ValidationTest.democomparingSrcTarget(ValidationTest.java:145)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
-"</b><br>org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:37)<br>com.dataValidation.asserationHandler.AssertationHandler.assertAll(AssertationHandler.java:15)<br>dataValidation.TestClass.ValidationTest.democomparingSrcTarget(ValidationTest.java:145)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)<br>
-</div> <!-- stack-trace -->
+                  <span class="parameters">(ROW, JSON, JSON, ,, ,)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-File_Validation-class-failed -->
+          </div> <!-- suite-File_Validation-class-passed -->
         </div> <!-- panel File_Validation -->
         <div panel-name="test-xml-File_Validation" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -179,8 +144,8 @@
 &lt;suite name=&quot;File Validation&quot;&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;comparison&quot; value=&quot;ROW&quot;/&gt;
-    &lt;parameter name=&quot;sourceType&quot; value=&quot;DB&quot;/&gt;
-    &lt;parameter name=&quot;targetType&quot; value=&quot;DB&quot;/&gt;
+    &lt;parameter name=&quot;sourceType&quot; value=&quot;JSON&quot;/&gt;
+    &lt;parameter name=&quot;targetType&quot; value=&quot;JSON&quot;/&gt;
     &lt;parameter name=&quot;separatorTarget&quot; value=&quot;,&quot;/&gt;
     &lt;parameter name=&quot;separatorSource&quot; value=&quot;,&quot;/&gt;
     &lt;packages&gt;
@@ -231,12 +196,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'democomparingSrcTarget')
 data.setCell(0, 2, 'dataValidation.TestClass.ValidationTest')
-data.setCell(0, 3, 2777);
+data.setCell(0, 3, 1989);
 window.suiteTableData['File_Validation']= { tableData: data, tableDiv: 'times-div-File_Validation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-File_Validation">
               </div> <!-- times-div-File_Validation -->
             </div> <!-- times-div -->
@@ -248,28 +213,17 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">democomparingSrcTarget(ROW, DB, DB, ,, ,)</span>
+              <span class="reporter-method-name">democomparingSrcTarget(ROW, JSON, JSON, ,, ,)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Connection Successful!</span>
-                <span class="reporter-method-output">Connection Successful!</span>
-                <span class="reporter-method-output">Connection Successful!</span>
-                <span class="reporter-method-output">Column name [ROLLNO]  and column size is [2] 
+                <span class="reporter-method-output">File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\sourceJSON\SourceJSON.json]  and ROW size is [76] 
 </span>
-                <span class="reporter-method-output">Column name [RESULT]  and column size is [2] 
+                <span class="reporter-method-output">File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\sourceJSON\SourceJSON.json]  and column size is [1] 
 </span>
-                <span class="reporter-method-output">Column name [NAME]  and column size is [1] 
+                <span class="reporter-method-output">File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\targetJSON\targetJSON.json]  and ROW size is [47] 
 </span>
-                <span class="reporter-method-output">Connection Successful!</span>
-                <span class="reporter-method-output">Connection Successful!</span>
-                <span class="reporter-method-output">Connection Successful!</span>
-                <span class="reporter-method-output">Column name [ROLLNO]  and column size is [2] 
+                <span class="reporter-method-output">File name [C:\Users\hlakshmanan\Documents\Harini\PROJECTS\Sample Works\git\dataValidation_generic.\Resources\JSON\targetJSON\targetJSON.json]  and column size is [1] 
 </span>
-                <span class="reporter-method-output">Column name [RESULT]  and column size is [2] 
-</span>
-                <span class="reporter-method-output">Column name [NAME]  and column size is [2] 
-</span>
-                <span class="reporter-method-output">Assertion Failed The data [ANAND,902,FAIL] was not found in the source</span>
-                <span class="reporter-method-output">Assertion Passed The data [HARINI,13,PASS] was found in the source</span>
+                <span class="reporter-method-output">Assertion Passed The data [DOTCOM_TENDER,DOTCOM_TENDER,0.0,1,15.92] was found in the source</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -289,9 +243,7 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">dataValidation.TestClass.ValidationTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">democomparingSrcTarget(ROW, DB, DB, ,, ,)</span>
+                <span class="method-name">democomparingSrcTarget(ROW, JSON, JSON, ,, ,)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
